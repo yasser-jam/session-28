@@ -1,0 +1,36 @@
+:root {
+  --bulma-primary-h: 36deg;
+  --bulma-primary-l: 48%;
+  --bulma-link-h: 196deg;
+  --bulma-link-s: 79%;  
+  --bulma-link-l: 61%;
+  --bulma-family-primary: Roboto flex, sans-serif;
+}
+
+/* Global */
+.title-section {
+    position: relative;
+}
+
+.title-section::after {
+  content: '';
+  width: 70px;
+  height: 5px;
+  background: hsl(
+    var(--bulma-primary-h),
+    var(--bulma-primary-s),
+    var(--bulma-primary-l)
+  ) !important;
+   position: absolute;
+   top: 120%;
+   left: 50%;
+   border-radius: 5px;
+   translate: -50%;
+
+}
+
+/* Services */
+.service {
+  border: 1px solid hsl(0, 2%, 89%);
+  border-radius: 5px;
+}
